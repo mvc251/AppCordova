@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otro Ejemplo de Ciclo Do-While</title>
+</head>
+<body>
+    <h1>Mostrar los numeros < 100</h1>
+    <Script type="text/javascript">
+        let res='s';
+        let num;
+        do {
+            num=parseInt(prompt('Teclea un valor:'));
+            if (num>100) {
+                document.write(num, '<br>');
+            }
+            res=prompt('Deseas capturar otro numero s/n?');
+        } while (res=='s');
+    </Script>
+</body>
+</html>

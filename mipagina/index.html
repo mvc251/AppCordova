@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagina Principal</title>
+    <link rel="stylesheet" href="css/cssIndex.css">
+    <link rel="stylesheet" href="css/cssMenu.css">
+    <link rel="stylesheet" href="vendor/fontawesome-free-6.2.1-web/css/all.css">
+  </head>
+  <body>
+    <div id="contenedorPrincipal">
+        <header id="encabezado">
+          <center>
+            <h1>Mi Pagina</h1>
+          </center>
+        </header>
+        <nav id="menu">
+            <!--Aqui va el menu-->
+            <ul>
+              <li>
+                <a href="html/inicio.html" target="iframeContenido"><i class="fa-solid fa-house-user"></i> Inicio</a>
+              </li>
+              <li>
+                <a href="html/galeria.html" target="iframeContenido"><i class="fa-solid fa-image"></i> Galeria</a>
+              </li>
+              <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn" target="iframeContenido"><i class="fa-brands fa-js"></i> Javascript</a>
+                <div class="dropdown-content">
+                  <a href="html/registro.html" target="iframeContenido">#1 Regitro</a>
+                  <a href="html/jquery.html" target="iframeContenido">#2 JQuery</a>
+                  <a href="html/angular.html" target="iframeContenido">#3 Angular</a>
+                  <a href="html/ajax.html" target="iframeContenido">#4 Ajax</a>
+                </div>
+              </li>
+              <li id="mPerfil" class="active">
+                <a href="#" target="iframeContenido">Perfil</a>
+              </li>
+            </ul>
+        </nav>
+         <section id="contenido">
+            <!--Aqui va el contenido-->
+            <iframe name="iframeContenido" height="100%" width="100%" src="html/inicio.html" frameborder="0"></iframe>
+         </section>
+         <footer id="piePagina">
+            <!--Aqui va el contenido del pie de pagina-->
+         </footer>
+    </div>
+  </body>
+</html>

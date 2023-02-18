@@ -1,0 +1,44 @@
+body {
+  background-color: beige;
+}
+
+#contenedorPrincipal {
+  border: 1px black solid;
+  width: 80%;
+  height: 100%;
+  margin: 0px auto;
+}
+
+#encabezado {
+  width: 100%;
+  height: 90px;
+  background-color: cadetblue;
+  margin: -20px auto;
+  background-image: url(../img/1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#menu {
+  width: 100%;
+  height: 39px;
+  background-color: aquamarine;
+  margin: 0px auto;
+}
+
+#contenido {
+  width: 100%;
+  height: 540px;
+  background-color: rgb(241, 248, 246);
+  margin: 0px auto;
+}
+
+#piePagina {
+  width: 100%;
+  height: 30px;
+  background-color: lightcoral;
+  margin: 0px auto;
+  background-image: url(../img/1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}

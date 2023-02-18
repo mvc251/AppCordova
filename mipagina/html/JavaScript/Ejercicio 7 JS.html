@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Ejemplo de Seleccion Multiple</title>
+</head>
+<body>
+    <h1>Uso de Switch</h1>
+    <h3>El sig. script lee un valor entre 1-5 y muestra la vocal correspondiente</h3>
+    <script type="text/javascript">
+        let vocal;
+        vocal=parseInt(prompt('Teclea un valor del entre 1-5'))
+        switch (vocal) {
+            case 1:
+            document.write('A - a');
+                break;
+            case 2:
+            document.write('E - e');
+                break;
+            case 3:
+            document.write('I - i');
+                break;
+            case 5:
+            document.write('O - o');
+                break;
+            case 5:
+            document.write('U - u');
+                break;
+            default:
+            document.write('Vocal inexistente');
+                break;
+        }
+    </script>
+</body>
+</html>

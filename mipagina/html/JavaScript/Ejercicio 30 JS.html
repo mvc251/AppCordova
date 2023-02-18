@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de eventos Con Textarea</title>
+</head>
+<body>
+    <h1>Determinar la longitud de un textarea</h1>
+    <Script type="text/javascript">
+    function contarcar() {
+    if (document.getElementById('comentarios').value.lenght > 1000){
+        alert('Conteniodo demasiado extenso!!!')
+    }
+    else{
+        alert('Contenido correcto!!!!')
+    }
+    }
+    </Script>
+    <form>
+        <textarea name="" id="comentarios" cols="100" rows="18"></textarea>
+        <br>
+        <br>
+        <input type="button" name="b1" value="Validar" onclick="contarcar()">
+    </form>
+</body>
+</html>

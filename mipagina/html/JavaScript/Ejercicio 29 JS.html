@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar los Datos de una Caja de Texto</title>
+</head>
+<body>
+    <h1>Datos Personales</h1>
+    <Script type="text/javascript">
+        let suma;
+        let resta;
+        let mult;
+        let division;
+        function mostrar() {
+            nombre=document.getElementById('nombre').value;
+            tel=document.getElementById('tel').value;
+            dir=document.getElementById('dir').value;
+            edad=document.getElementById('edad').value;
+            alert('Nombre: '+nombre+'\nDireccion: '+dir+'\nEdad: '+edad+'\nTelefono: '+tel);
+        }
+    </Script>
+    <form>
+      Ingresa Nombre:
+      <input type="text" id="nombre">
+      <br>
+      Ingresa Direccion:
+      <input type="text" id="dir">
+      <br>
+      Ingresa Edad:
+      <input type="text" id="edad">
+      <br>
+      Ingresa Telefono:
+      <input type="text" id="tel">
+      <br><br><br>
+      <input type="button" name="b1" onclick="mostrar()" value="Datos P.">
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUNCIONES CON PARAMETROS</title>
+</head>
+<body>
+    <h1>Recibir 2 valores y elevar el primero a la potencia del segundo</h1>
+    <Script type="text/javascript">
+        let v1;
+        let v2;
+        let pot=0;
+        function potencia(v1,v2) {
+            pot=Math.pow(v1,v2);
+            document.write('La potencia de ',v1, ' elevado a ',v2, ' es igual a = ', pot);
+        }
+        v1=parseInt(prompt('Teclea la base'));
+        v2=parseInt(prompt('Teclea la potencia'));
+        potencia(v1,v2);
+    </Script>
+</body>
+</html>

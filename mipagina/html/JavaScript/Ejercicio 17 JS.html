@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otro Ejemplo de Ciclo Do-While</title>
+</head>
+<body>
+    <h1>Elabora un script que solicite diversos numeros hasta que la persona
+        indique que ya no desea capturar mas valores y que calcule y muestre
+        el promedio</h1>
+    <Script type="text/javascript">
+        let res='s';
+        let num;
+        do {
+            num=parseInt(prompt('Teclea un valor:'));
+            if (num>100) {
+                document.write(num, '<br>');
+            }
+            res=prompt('Deseas capturar otro numero s/n?');
+        } while (res=='s')
+        if (res =='n') {
+            res=prompt('Fin del programa');
+        }
+    </Script>
+</body>
+</html>

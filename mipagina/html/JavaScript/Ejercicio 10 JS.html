@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Ejemplo FOR</title>
+</head>
+<body>
+   <h2>Calcular la suma de n valores</h2> 
+   <script type="text/javascript">
+    let suma=0;
+    let n;
+    let num;
+    let producto=1;
+    n=parseInt(prompt('Teclea la cantidad de numeros'));
+    for (let index = 1; index <= n; index++) {
+        num=parseInt(prompt('Teclea un numero'));
+        suma+=num;
+        producto*=num;
+    }
+    document.write('Suma = ', suma);
+    document.write('<br> Multiplicacion = ', producto);
+</script>
+</body>
+</html>

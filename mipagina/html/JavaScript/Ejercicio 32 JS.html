@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Onfocus y OnBlur</title>
+</head>
+<body>
+    <h1>Activar y desactivar el foco de un elemento</h1>
+    <Script type="text/javascript">
+        function limpiar(control) {
+            control.value='';
+        }
+        function verificar(control) {
+            if (control.value=='') {
+                alert('Ingrese datos!!!');
+            }
+        }
+    </Script>
+    <form>
+        <input type="text" id="nombre" onfocus="limpiar(this)" onblur="verificar(this)" value="Nombre">
+        <br>
+        <input type="text" id="edad" onfocus="limpiar(this)" onblur="verificar(this)" value="Edad">
+        <br>
+        <br>
+        <input type="button" name="b1" value="Confirmar">
+    </form>
+</body>
+</html>

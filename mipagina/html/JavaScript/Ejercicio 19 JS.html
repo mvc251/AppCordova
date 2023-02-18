@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valor Mayor</title>
+</head>
+<body>
+    <h1>Elaborar un script que calcule el valor mayor de los valores 
+        introducidos, el resultado debe mostrarse cuando el usuario ya no 
+        desee ingresar valores
+    </h1>
+    <Script type="text/javascript">
+        let num;
+        let may=0;
+        let res='s';
+        let c;
+
+        while (res=='s') {
+            num=parseInt(prompt('Teclea un numero:'));
+            c++;
+            if (c==1) {
+                may=num;
+            }
+            else{
+                if (num>may) {
+                    may=num
+                }
+                else{
+                    may=may;
+                }
+            }
+            res=prompt('Desea capturar otro numero?')
+        }
+        document.write('El valor mayor es: ',may); 
+    </Script>
+</body>
+</html>

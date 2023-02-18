@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="../vendor/bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    <script src="../vendor/bootstrap-5.2.3-dist/js/bootstrap.bundle.js"></script>
+</head>
+<body>
+    <center>
+    <div>
+    <h1>Pagina de incio</h1>
+    <img id="imgInicio" src="../img/conejo1.jpg" width="420px" height="420px" alt="" class="rounded-circle"> 
+    <br><br>
+    <button onclick="document.getElementById('imgInicio').src='../img/conejo1.jpg'" class="btn btn-primary">Foto 1</button>
+    <button onclick="document.getElementById('imgInicio').src='../img/conejo2.jpg'" class="btn btn-success">Foto 2</button> 
+    <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#myModal">Info Foto 1</button>
+    </div>
+    </center>
+
+    <!-- Inicio Ventana Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!--Modal Header-->
+                <div class="modal-header">
+                    <h4>Modal</h4>
+                    <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!--Modal  Body-->
+                <div class="modal-body">
+                    Modal Body
+                </div>
+
+                <!--Modal Footer-->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Fin Ventana Modal -->
+
+</body>
+</html>

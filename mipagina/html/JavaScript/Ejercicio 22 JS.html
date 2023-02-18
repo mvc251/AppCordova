@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones</title>
+</head>
+<body>
+    <h1>Recibir 2 valores y mostrar las operaciones basicas</h1>
+    <Script type="text/javascript">
+        let v1;
+        let v2;
+        let sum=0;
+        let divi=0;
+        let rest=0;
+        let mult=0;
+
+        function Suma(v1,v2) {
+            sum=v1+v2;
+            document.write('La suma de ',v1, ' mas ',v2, ' es igual a = ', sum,'<br>');
+        }
+        function Resta(v1,v2) {
+            rest=v1-v2;
+            document.write('La resta de ',v1, ' menos ',v2, ' es igual a = ', rest,'<br>');
+        }
+        function Divison(v1,v2) {
+            divi=v1/v2;
+            document.write('La division de ',v1, ' entre ',v2, ' es igual a = ', divi,'<br>');
+        }
+        function Multiplicacion(v1,v2) {
+            mult=v1*v2;
+            document.write('La multiplicacion de ',v1, ' por ',v2, ' es igual a = ', mult,'<br>');
+        }
+
+        v1=parseInt(prompt('Teclea el numero 1'));
+        v2=parseInt(prompt('Teclea el numero 2'));
+
+        Suma(v1,v2);
+        Resta(v1,v2);
+        Multiplicacion(v1,v2);
+        Divison(v1,v2);
+    </Script>
+</body>
+</html>

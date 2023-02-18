@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numero Mayor</title>
+</head>
+<body>
+    <h1>Elaborar un script que pida numeros poe teclado y que al finalizar la captura
+        muestre el promedio
+    </h1>
+    <Script type="text/javascript">
+        let prom=0;
+        let sum=0;
+        let num=0;
+        let res='s';
+        c=0;
+        while (res=='s') {
+            num=parseInt(prompt('Teclea el numero'));
+            sum+=num;
+            c++;
+            res=prompt('Desea capturar otro numero s/n?');
+        }
+        prom=sum/c;
+        document.write('Promedio= ',prom);
+    </Script>
+</body>
+</html>

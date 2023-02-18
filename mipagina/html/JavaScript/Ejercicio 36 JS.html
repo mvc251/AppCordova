@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos OnLoad</title>
+</head>
+<body onload="activar()">
+    <h1>Colocar el foco en el primer elemento</h1>
+    <script type="text/javascript">
+        function activar() {
+           document.getElementById('nombre').focus();
+        }
+    </script>
+    <form>
+        Ingrese su Nombre: <input type="text" id="nombre"><br>
+        Ingrese su Edad: <input type="text" id="edad"><br><br>
+        <input type="button" name="b1" value="Confirmar">
+
+    </form>
+</body>
+</html>

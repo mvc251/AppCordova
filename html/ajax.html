@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax</title>
+    <link rel="stylesheet" href="../vendor/bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/ajax.css">
+    <script src="../js/ajax.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Ejemplo 1</h1>
+        <hr>
+        <h2>The XMLHttpRequest Object</h2>
+        <button type="button" onclick="loadDoc()" class="btn btn-info">Get my CD collection</button>
+        <br><br>
+        <table id="demo"></table>
+    </div>
+    <br><br>
+    
+    <div class="container">
+        <h2>Ejemplo 2</h1>
+        <hr>
+        <div id="demo2">
+            <h2>The XMLHttpRequest Object</h2>
+            <button type="button" onclick="loadDoc2()" class="btn btn-info">Change Content</button>
+        </div>
+    </div>
+    <br><br>
+
+    <div class="container">
+        <h2>Ejemplo 3</h1>
+            <hr>
+            <h2>The XMLHttpRequest Object</h2>
+            <h3>Start typing a name in the input field below:</h3>
+            
+            <p>Suggestions: <span id="txtHint"></span></p> 
+            <p>First name: <input type="text" id="txt1" onkeyup="showHint(this.value)"></p><h2>The XMLHttpRequest Object</h2>
+
+            <form action=""> 
+              <select name="customers" onchange="showCustomer(this.value)">
+                <option value="">Select a customer:</option>
+                <option value="ALFKI">Alfreds Futterkiste</option>
+                <option value="NORTS ">North/South</option>
+                <option value="WOLZA">Wolski Zajazd</option>
+              </select>
+            </form>
+            <br>
+            <div id="txtHint">Customer info will be listed here...</div>
+    </div>
+</body>
+</html>
